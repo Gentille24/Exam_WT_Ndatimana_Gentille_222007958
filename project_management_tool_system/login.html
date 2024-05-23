@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project_management_tool_system</title>
+    <style>
+        body {
+            background-image: url('./images/AS.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Century', sans-serif;
+            color: white;
+        }
+
+        h2 {
+            font-family: 'Imprint MT Shadow', sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+        }
+
+        button {
+            padding: 10px;
+            width: 140px;
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+
+        .container {
+            background-color: lightseagreen;
+            width: 800px;
+            margin: 90px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .register-button {
+            border-color: fuchsia;
+            border-radius: 8px;
+            color: fuchsia;
+            margin-left: 15px;
+        }
+
+        .register-button a {
+            text-decoration: none;
+            color: fuchsia;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+    <img src="./Images/ll.jpeg" width="220" height="120" alt="Logo">
+  </li>
+    <div class="container">
+        <h1>project_management_tool_system</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="login.php" method="POST">
+                    <h2 class="text-center">Login Form</h2>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="Email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="Password" class="form-control" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" name="submit" class="btn btn-primary">Login</button>
+                        <button type="reset" name="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
+                    <br>
+                    <p style="font-size: 18px;">Don't have an account? <button class="register-button"><a href="register.html">Register</a></button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

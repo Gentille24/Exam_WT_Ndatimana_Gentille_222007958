@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Address</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* CSS styles */
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: darkgoldenrod;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: darkorchid;
+    }
+    
+    /* Unvisited link */
+    a:link {
+      color: darkgreen;
+    }
+    
+    /* Hover effect */
+    a:hover {
+      background-color: greenyellow;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: green;
+    }
+
+    /* Additional styles */
+    body {
+     
+     
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    .navigation {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navigation li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .navigation li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: relative;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+       }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+}
+
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      position: fixed;
+       bottom: 0;
+      width: 100%;
+    }
+ 
+ 
+  </style>
+</head>
+<body>
+
+<header>
+   <form class="forms" role="search" action="search.php">
+      <input  type="text" placeholder="Search" aria-label="Search"name="query">
+      <button  type="submit">Search</button>
+    </form>
+     <body bgcolor="darkgray">
+
+    
+    <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+    <img src="./Images/cc.jpeg" width="90" height="60" alt="Logo">
+  </li>
+  <nav>
+    <ul class="navigation">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown">
+        <a href="#">FORMS&TABLES</a>
+        <div class="dropdown-content">
+              <a href="projects.php">Projects</a>
+          <a href="tasks.php">Tasks</a>
+          <a href="assignments.php">Assignments</a>
+          <a href="attachments.php">Attachments</a>
+          <a href="meetings.php">Meetings</a>
+          <a href="teamMembers.php">TeamMembers</a>
+          <a href="timelines.php">Timelines</a>
+           <a href="budgets.php">Budgets</a>
+            <a href="expenses.php">Expenses</a>
+            <a href="taskcomments.php">Taskcomments</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Settings</a>
+        <div class="dropdown-content">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2><u>OUR CONTACT US</u></h2>
+  <ul>
+    <li>Address: 125 Main Street, HUYE city, State</li>
+    <li>Phone: +250 781663366</li>
+    <li>Email: info@projectmanagementtool.com</li>
+  </ul>
+
+  <form action="submit_contact" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Telephone:</label><br>
+    <input type="tel" id="phone" name="phone"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+
+  <p>Connect with us on social media or social networking:</p>
+  <a href="https://www.twitter.com/stockmgt">Twitter</a>
+  <a href="https://www.facebook.com/stockmgt">Facebook</a>
+  <a href="https://www.instagram.com/stockmgt">Instagram</a>
+  <a href="https://www.whatsapp.com/stockmgt">Whatsapp</a>
+</section>
+
+<footer>
+  <center> 
+    <b>UR CBE BIT &copy; 2024 &reg;, Designed by: @NDATIMANA Gentille</b>
+  </center>
+</footer>
+
+</body>
+</html>
